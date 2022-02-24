@@ -6,6 +6,7 @@ ___
 - CSS
 - Javascript
 - Python
+- C++ (eventually)
 ___
 ## **Interest**
 - Art
