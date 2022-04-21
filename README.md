@@ -4,6 +4,7 @@ ___
 ## Projects
 - [Defend!](https://avoradev.github.io/defend/)
 - [Island | Tech Demo](https://avoradev.github.io/island/)
+- [Chem](https://avoradev.github.io/chem/)
 ___
 ## Learning
 - HTML
