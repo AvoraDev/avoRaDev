@@ -1,4 +1,4 @@
-# **@avoRaDev** *(A.K.A AvoRaDev or AvoRa)*
+# **@AvoraDev**
 *A tired person that could use a longer nap*
 ___
 ## Projects
