@@ -5,8 +5,10 @@
 ## Projects
 
 - [Defend!](https://avoradev.github.io/defend/)
-- [Island | Tech Demo](https://avoradev.github.io/island/)
+- [Island](https://avoradev.github.io/island/)
 - [Chem](https://avoradev.github.io/chem/)
+- [Winter](https://avoradev.github.io/winter)
+- [Grids](https://avoradev.github.io/grids)
 
 ## Learning
 
@@ -21,4 +23,3 @@
 - Art
 - Coding
 - Games
-
