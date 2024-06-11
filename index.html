@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .fullscreen {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .centered-children {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parallax-img {
+            /* Grabbed from https://www.w3schools.com/howto/howto_css_parallax.asp */
+            background-attachment: fixed;   /* keeps image in place */
+            background-position: center;    /* centeres image */
+            background-repeat: no-repeat;   /* prevents repeat (may not be needed?) */
+            background-size: cover;         /* changes cropping */
+        }
+        #entrance {
+            background-image: url(./Mountains.jpg);
+            height: 50rem;
+        }
+        #entrance-title {
+            padding: 0.75rem 2rem;
+            border: 0.25rem solid white;
+            background-color: rgba(75, 75, 75, 0.5);
+            color: white;
+        }
+        #topnav {
+            display: flex;
+            align-items: center;
+            height: 4rem;
+            padding: 0.5rem;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+        }
+        #topnav * {
+            width: 3rem;
+            height: 3rem;
+            background-color: white;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+
+            $(document).scroll(e => {
+                let blur = Math.round($(window).scrollTop() * 0.0075);
+                $('#entrance').css({
+                    'filter'         : `blur(${blur}px)`,
+                    '-webkit-filter' : `blur(${blur}px)`,
+                    '-moz-filter'    : `blur(${blur}px)`,
+                    '-o-filter'      : `blur(${blur}px)`,
+                    '-ms-filter'     : `blur(${blur}px)`
+                })
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id="entrance" class="parallax-img centered-children">
+        <p id="entrance-title">Title Here</p>
+    </div>
+
+    <div id="topnav">
+        <img src="" alt="icon">
+    </div>
+
+    <div style="height: 100rem; overflow: wrap;">
+    </div>
+</body>
+</html>
